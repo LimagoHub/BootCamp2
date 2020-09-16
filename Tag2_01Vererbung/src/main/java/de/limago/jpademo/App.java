@@ -31,29 +31,29 @@ public class App
     	EntityTransaction transaction = em.getTransaction();
     	transaction.begin();
     	
-//    	Hund fiffi = new Hund();
-//    	fiffi.setName("Fiffi");
-//    	
-//    	em.persist(fiffi);
-//    	
-//    	Hund hasso = new Hund();
-//    	hasso.setName("Hasso");
-//    	
-//    	em.persist(hasso);
-//    	
-//    	Katze katze = new Katze();
-//    	katze.setName("Mietzie");
-//    	
-//    	em.persist(katze);
-//    	
+    	Hund fiffi = new Hund();
+    	fiffi.setName("Fiffi");
+    	
+    	em.persist(fiffi);
+    	
+    	Hund hasso = new Hund();
+    	hasso.setName("Hasso");
+    	
+    	em.persist(hasso);
+    	
+    	Katze katze = new Katze();
+    	katze.setName("Mietzie");
+    	
+    	em.persist(katze);
+    	
     	
 //    	Hund h = em.find(Hund.class, 1);
 //    	System.out.println(h);
     	
-    	Tier t = em.find(Tier.class, 3);
-    	System.out.println(t);
-    	
-    	
+//    	Tier t = em.find(Tier.class, 3);
+//    	System.out.println(t);
+//    	
+//    	
     	transaction.commit();
     	em.close();
     	
