@@ -3,6 +3,7 @@ package de.services.math;
 import javax.ejb.Local;
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
+import javax.interceptor.ExcludeClassInterceptors;
 import javax.interceptor.Interceptors;
 
 import de.interceptors.LoggerInterceptor;
@@ -12,6 +13,7 @@ import de.interceptors.LoggerInterceptor;
 @Stateless
 @Interceptors(LoggerInterceptor.class)
 public class CalculatorImpl implements CalculatorLocal{
+	
 
 	@Override
 	public double add(double a, double b) {
