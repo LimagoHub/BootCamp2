@@ -84,5 +84,10 @@ public class Order_detail implements Serializable {
 	public void setProduct(Product product) {
 		this.product = product;
 	}
+	
+	
+	public double getTotal() {
+		return getUnitPrice().doubleValue() * (double) getQuantity();
+	}
 
 }

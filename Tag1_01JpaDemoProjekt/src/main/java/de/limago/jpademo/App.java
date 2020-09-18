@@ -29,10 +29,13 @@ public class App
     	EntityManager em = entityManagerFactory.createEntityManager(); // Session per Action
     	em.getTransaction().begin(); // Transaction per Session
     	
-//    	Person john = new Person("Max", "Mustermann");
-//    	john.getAdresse().setPlz("12345");
-//    	john.getAdresse().setOrt("Nirgendwo");
-//    	em.persist(john); // Speichert John // Attached
+    	Person john = new Person("Max", "Mustermann");
+    	john.getAdresse().setPlz("12345");
+    	john.getAdresse().setOrt("Nirgendwo");
+    	em.persist(john); // Speichert John // Attached
+    	
+    	Person p = em.find(Person.class, 5);
+    	System.out.println(p);
     	
 //    	Person max = em.find(Person.class, 3); // Attached
 //    	max.setVorname("Erika");
@@ -60,13 +63,13 @@ public class App
 //    	
 //    	em.persist(person);
     	
-    	Person person = em.find(Person.class, 1);
-    	//System.out.println(person.getKontakte());
-    	
+//    	Person person = em.find(Person.class, 1);
+//    	//System.out.println(person.getKontakte());
+//    	
     	em.getTransaction().commit();
     	em.close();
     	
-    	System.out.println(person.getKontakte());
+//    	System.out.println(person.getKontakte());
 
     	
     	// Person ist persistent

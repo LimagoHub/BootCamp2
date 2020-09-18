@@ -196,4 +196,9 @@ public class Order implements Serializable {
 		this.employee = employee;
 	}
 
+	@Override
+	public String toString() {
+		return "Order [orderID=" + orderID + ", orderDate=" + orderDate + "]";
+	}
+
 }
