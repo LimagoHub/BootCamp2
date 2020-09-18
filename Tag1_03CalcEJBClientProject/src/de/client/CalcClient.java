@@ -5,7 +5,7 @@ import java.util.Properties;
 import javax.naming.Context;
 import javax.naming.InitialContext;
 
-import de.services.math.Calculator;
+import de.ejb.services.CalculatorServiceRemote;
 
 
 
@@ -26,7 +26,7 @@ public class CalcClient {
 		InitialContext initialContext = new InitialContext(props);
 		
 	
-		Calculator calculator = (Calculator) initialContext.lookup(Calculator.JNDI_NAME);
+		CalculatorServiceRemote calculator = (CalculatorServiceRemote) initialContext.lookup("CalculatorService/remote");
 		
 		System.out.println(calculator.sub(3,4));
 		System.out.println(calculator.add(3,4));
