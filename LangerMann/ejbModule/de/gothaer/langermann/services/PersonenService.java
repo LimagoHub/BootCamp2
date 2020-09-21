@@ -9,6 +9,6 @@ import de.gothaer.langermann.repositoies.entities.Person;
 @Remote
 public interface PersonenService {
 	String JNDI_NAME = "PersonenServiceImpl/remote";
-	void speichern(Person person);
-	List<Person> gibMichAlle();
+	void speichern(Person person) throws PersonenServiceException;
+	List<Person> gibMichAlle()  throws PersonenServiceException;
 }
