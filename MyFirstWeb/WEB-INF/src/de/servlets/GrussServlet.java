@@ -33,6 +33,8 @@ public class GrussServlet extends HttpServlet {
 //		// Leitet via Browser an die JSp weiter (neuer Request-Response Zyklus)
 //		resp.sendRedirect("antwort.jsp");
 		
+		
+		// Server intern
 		req.getRequestDispatcher("antwort.jsp").forward(req, resp);
 		
 	}

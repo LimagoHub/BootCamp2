@@ -1,5 +1,7 @@
 package de.forms;
 
+
+// Model
 public class EingabeForm {
 	
 	private String name;
