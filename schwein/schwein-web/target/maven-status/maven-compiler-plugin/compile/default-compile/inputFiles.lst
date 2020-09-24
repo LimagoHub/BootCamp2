@@ -1,7 +1,9 @@
-C:\Users\JoachimWagner\eclipse-workspaces\BootCamp2_2\schwein\schwein-web\src\main\java\de\limago\schweine\controller\MemberController.java
-C:\Users\JoachimWagner\eclipse-workspaces\BootCamp2_2\schwein\schwein-web\src\main\java\de\limago\schweine\dtos\SchweinDTO.java
-C:\Users\JoachimWagner\eclipse-workspaces\BootCamp2_2\schwein\schwein-web\src\main\java\de\limago\schweine\rest\MemberResourceRESTService.java
-C:\Users\JoachimWagner\eclipse-workspaces\BootCamp2_2\schwein\schwein-web\src\main\java\de\limago\schweine\web\SchweinMapper.java
-C:\Users\JoachimWagner\eclipse-workspaces\BootCamp2_2\schwein\schwein-web\src\main\java\de\limago\schweine\util\WebResources.java
-C:\Users\JoachimWagner\eclipse-workspaces\BootCamp2_2\schwein\schwein-web\src\main\java\de\limago\schweine\rest\JaxRsActivator.java
-C:\Users\JoachimWagner\eclipse-workspaces\BootCamp2_2\schwein\schwein-web\src\main\java\de\limago\schweine\rest\SchweineController.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\controller\MemberController.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\web\SchweinMapper.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\rest\MemberResourceRESTService.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\dtos\PersonDTO.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\web\PersonMapper.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\util\WebResources.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\dtos\SchweinDTO.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\rest\JaxRsActivator.java
+C:\Users\JoachimWagner\git\BootCamp2\schwein\schwein-web\src\main\java\de\limago\schweine\rest\SchweineController.java

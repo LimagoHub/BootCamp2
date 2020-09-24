@@ -1,4 +1,5 @@
 de\limago\schweine\util\WebResources.class
+de\limago\schweine\web\PersonMapperImpl.class
 de\limago\schweine\web\SchweinMapperImpl.class
 de\limago\schweine\rest\JaxRsActivator.class
 de\limago\schweine\rest\MemberResourceRESTService.class

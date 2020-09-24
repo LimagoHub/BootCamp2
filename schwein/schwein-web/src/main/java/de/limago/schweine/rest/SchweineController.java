@@ -59,7 +59,7 @@ public class SchweineController {
 			log.log(Level.SEVERE, "Fehler im Service", e);
 			builder = Response.serverError();
 		}
-		//builder.header("location",URI.create(request.getRequestURL().toString()));
+		//builder.header("location",URI.create(request.getServletPath());
 		return builder.build();
 	}
 	

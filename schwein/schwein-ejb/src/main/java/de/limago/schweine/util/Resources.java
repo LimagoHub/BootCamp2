@@ -16,12 +16,18 @@
  */
 package de.limago.schweine.util;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.logging.Logger;
 
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;
+import javax.inject.Named;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+
+import de.limago.schweine.annotations.AntipathenQualifier;
+import de.limago.schweine.annotations.FruitsQualifier;
 
 /**
  * This class uses CDI to alias Java EE resources, such as the persistence context, to CDI beans
@@ -45,4 +51,18 @@ public class Resources {
     public Logger produceLog(InjectionPoint injectionPoint) {
         return Logger.getLogger(injectionPoint.getMember().getDeclaringClass().getName());
     }
+    
+    @Produces
+    @AntipathenQualifier
+    public List<String> produceAntipathen() {
+    	return Arrays.asList("Peter","Paul","Mary", "Attila");
+    }
+    
+    @Produces
+    @FruitsQualifier
+    public List<String> produceFruits() {
+    	return Arrays.asList("Banane","Apfel","Birne", "Erdbeere");
+    }
+    
+    
 }
