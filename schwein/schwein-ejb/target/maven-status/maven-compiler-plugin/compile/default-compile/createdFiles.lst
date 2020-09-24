@@ -1,0 +1,6 @@
+de\limago\schweine\util\Resources.class
+de\limago\schweine\data\MemberListProducer.class
+de\limago\schweine\data\MemberRepository.class
+de\limago\schweine\service\MemberRegistration.class
+de\limago\schweine\model\Member.class
+de\limago\schweine\mapper\SchweinEntityMapperImpl.class
