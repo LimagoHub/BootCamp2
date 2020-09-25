@@ -87,6 +87,12 @@ public class PersonServiceImpl implements PersonService {
 		return repo.delete(id);
 	}
 
+
+	@Override
+	public List<Person> findeMitVornameUndNachname(String vorname, String nachname) throws PersonServiceException {
+		return mapper.convert(repo.findByVornameAndNachname(vorname, nachname));
+	}
+
 	
    
 

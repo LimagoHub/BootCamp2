@@ -13,6 +13,7 @@ public interface PersonService {
 	List<Person> findeAll() throws PersonServiceException;
 	List<Person> findeMitVorname(String vorname) throws PersonServiceException;
 	List<Person> findeMitNachname(String nachname) throws PersonServiceException;
+	List<Person> findeMitVornameUndNachname(String vorname, String nachname) throws PersonServiceException;
 	boolean speichern(Person entity) throws PersonServiceException;
 	boolean loeschen(Person entity) throws PersonServiceException;
 	boolean loeschen(String id) throws PersonServiceException;

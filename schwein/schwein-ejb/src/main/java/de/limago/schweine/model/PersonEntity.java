@@ -22,7 +22,8 @@ import lombok.NoArgsConstructor;
 @NamedQueries ({
 		@NamedQuery(name = "PersonEntity.findAll", query = "select p from PersonEntity p"),
 		@NamedQuery(name = "PersonEntity.findByVorname", query = "select p from PersonEntity p where p.vorname like :vorname"),
-		@NamedQuery(name = "PersonEntity.findByNachname", query = "select p from PersonEntity p where p.nachname like :nachname")
+		@NamedQuery(name = "PersonEntity.findByNachname", query = "select p from PersonEntity p where p.nachname like :nachname"),
+		@NamedQuery(name = "PersonEntity.findByVornameAndNachname", query = "select p from PersonEntity p where p.vorname like :vorname and p.nachname like :nachname")
 }
 )
 public class PersonEntity {

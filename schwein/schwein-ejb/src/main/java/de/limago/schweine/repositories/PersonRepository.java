@@ -14,6 +14,7 @@ public interface PersonRepository {
 	List<PersonEntity> findAll();
 	List<PersonEntity> findByVorname(String vorname);
 	List<PersonEntity> findByNachname(String nachname);
+	List<PersonEntity> findByVornameAndNachname(String vorname, String nachname);
 	boolean saveOrUpdate(PersonEntity entity);
 	boolean delete(PersonEntity entity);
 	boolean delete(String id);

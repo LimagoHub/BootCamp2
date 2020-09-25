@@ -71,6 +71,14 @@ public class PersonRepositoryImpl implements PersonRepository {
 		entityManager.remove(toDelete);
 		return true;
 	}
+
+	@Override
+	public List<PersonEntity> findByVornameAndNachname(String vorname, String nachname) {
+		TypedQuery<PersonEntity> query = entityManager.createNamedQuery("PersonEntity.findByVornameAndNachname", PersonEntity.class);
+		query.setParameter("vorname", vorname);
+		query.setParameter("nachname", nachname);
+		return query.getResultList();
+	}
     
     
 
